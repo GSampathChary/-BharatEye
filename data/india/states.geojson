@@ -1,0 +1,560 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-TS",
+        "name": "Telangana",
+        "code": "TS",
+        "risk_score": 67,
+        "active_events": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.9151,
+              16.6496
+            ],
+            [
+              80.3151,
+              16.6496
+            ],
+            [
+              80.6151,
+              19.049599999999998
+            ],
+            [
+              78.1151,
+              19.449599999999997
+            ],
+            [
+              77.9151,
+              16.6496
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-AP",
+        "name": "Andhra Pradesh",
+        "code": "AP",
+        "risk_score": 74,
+        "active_events": 12
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.53999999999999,
+              14.712900000000001
+            ],
+            [
+              80.94,
+              14.712900000000001
+            ],
+            [
+              81.24,
+              17.1129
+            ],
+            [
+              78.74,
+              17.5129
+            ],
+            [
+              78.53999999999999,
+              14.712900000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-OD",
+        "name": "Odisha",
+        "code": "OD",
+        "risk_score": 49,
+        "active_events": 14
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.8985,
+              19.7517
+            ],
+            [
+              86.2985,
+              19.7517
+            ],
+            [
+              86.5985,
+              22.151699999999998
+            ],
+            [
+              84.0985,
+              22.551699999999997
+            ],
+            [
+              83.8985,
+              19.7517
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-KL",
+        "name": "Kerala",
+        "code": "KL",
+        "risk_score": 58,
+        "active_events": 15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.0711,
+              9.650500000000001
+            ],
+            [
+              77.4711,
+              9.650500000000001
+            ],
+            [
+              77.7711,
+              12.0505
+            ],
+            [
+              75.2711,
+              12.4505
+            ],
+            [
+              75.0711,
+              9.650500000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-MH",
+        "name": "Maharashtra",
+        "code": "MH",
+        "risk_score": 46,
+        "active_events": 22
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51389999999999,
+              18.5515
+            ],
+            [
+              76.9139,
+              18.5515
+            ],
+            [
+              77.2139,
+              20.9515
+            ],
+            [
+              74.7139,
+              21.351499999999998
+            ],
+            [
+              74.51389999999999,
+              18.5515
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-GJ",
+        "name": "Gujarat",
+        "code": "GJ",
+        "risk_score": 91,
+        "active_events": 25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              69.9924,
+              21.0587
+            ],
+            [
+              72.39240000000001,
+              21.0587
+            ],
+            [
+              72.6924,
+              23.4587
+            ],
+            [
+              70.1924,
+              23.8587
+            ],
+            [
+              69.9924,
+              21.0587
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-TN",
+        "name": "Tamil Nadu",
+        "code": "TN",
+        "risk_score": 61,
+        "active_events": 21
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.45689999999999,
+              9.927100000000001
+            ],
+            [
+              79.8569,
+              9.927100000000001
+            ],
+            [
+              80.1569,
+              12.3271
+            ],
+            [
+              77.6569,
+              12.7271
+            ],
+            [
+              77.45689999999999,
+              9.927100000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-KA",
+        "name": "Karnataka",
+        "code": "KA",
+        "risk_score": 95,
+        "active_events": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.51389999999999,
+              14.1173
+            ],
+            [
+              76.9139,
+              14.1173
+            ],
+            [
+              77.2139,
+              16.5173
+            ],
+            [
+              74.7139,
+              16.917299999999997
+            ],
+            [
+              74.51389999999999,
+              14.1173
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-PB",
+        "name": "Punjab",
+        "code": "PB",
+        "risk_score": 94,
+        "active_events": 11
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.1412,
+              29.9471
+            ],
+            [
+              76.5412,
+              29.9471
+            ],
+            [
+              76.8412,
+              32.3471
+            ],
+            [
+              74.3412,
+              32.747099999999996
+            ],
+            [
+              74.1412,
+              29.9471
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-AS",
+        "name": "Assam",
+        "code": "AS",
+        "risk_score": 40,
+        "active_events": 3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.7376,
+              25.000600000000002
+            ],
+            [
+              94.1376,
+              25.000600000000002
+            ],
+            [
+              94.4376,
+              27.4006
+            ],
+            [
+              91.9376,
+              27.8006
+            ],
+            [
+              91.7376,
+              25.000600000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-WB",
+        "name": "West Bengal",
+        "code": "WB",
+        "risk_score": 77,
+        "active_events": 28
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              86.655,
+              21.7868
+            ],
+            [
+              89.055,
+              21.7868
+            ],
+            [
+              89.355,
+              24.186799999999998
+            ],
+            [
+              86.855,
+              24.586799999999997
+            ],
+            [
+              86.655,
+              21.7868
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-UP",
+        "name": "Uttar Pradesh",
+        "code": "UP",
+        "risk_score": 61,
+        "active_events": 14
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7462,
+              25.6467
+            ],
+            [
+              82.14620000000001,
+              25.6467
+            ],
+            [
+              82.4462,
+              28.046699999999998
+            ],
+            [
+              79.9462,
+              28.446699999999996
+            ],
+            [
+              79.7462,
+              25.6467
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-RJ",
+        "name": "Rajasthan",
+        "code": "RJ",
+        "risk_score": 46,
+        "active_events": 18
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.0179,
+              25.823800000000002
+            ],
+            [
+              75.4179,
+              25.823800000000002
+            ],
+            [
+              75.7179,
+              28.2238
+            ],
+            [
+              73.2179,
+              28.6238
+            ],
+            [
+              73.0179,
+              25.823800000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-MP",
+        "name": "Madhya Pradesh",
+        "code": "MP",
+        "risk_score": 55,
+        "active_events": 5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.45689999999999,
+              21.773400000000002
+            ],
+            [
+              79.8569,
+              21.773400000000002
+            ],
+            [
+              80.1569,
+              24.1734
+            ],
+            [
+              77.6569,
+              24.5734
+            ],
+            [
+              77.45689999999999,
+              21.773400000000002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ST-UK",
+        "name": "Uttarakhand",
+        "code": "UK",
+        "risk_score": 46,
+        "active_events": 27
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.8193,
+              28.8668
+            ],
+            [
+              80.2193,
+              28.8668
+            ],
+            [
+              80.5193,
+              31.2668
+            ],
+            [
+              78.0193,
+              31.6668
+            ],
+            [
+              77.8193,
+              28.8668
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

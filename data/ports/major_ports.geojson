@@ -1,0 +1,233 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deendayal (Kandla)",
+        "code": "IXK",
+        "lat": 23.0033,
+        "lng": 70.2167,
+        "state": "Gujarat",
+        "vessels": 142,
+        "congestion": 68
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.2167,
+          23.0033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mumbai Port",
+        "code": "BOM",
+        "lat": 18.9438,
+        "lng": 72.8358,
+        "state": "Maharashtra",
+        "vessels": 210,
+        "congestion": 74
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8358,
+          18.9438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jawaharlal Nehru Port (JNPA)",
+        "code": "JNP",
+        "lat": 18.95,
+        "lng": 72.95,
+        "state": "Maharashtra",
+        "vessels": 412,
+        "congestion": 89
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.95,
+          18.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mormugao Port",
+        "code": "MRG",
+        "lat": 15.4167,
+        "lng": 73.8,
+        "state": "Goa",
+        "vessels": 85,
+        "congestion": 45
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          15.4167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Mangalore Port",
+        "code": "NML",
+        "lat": 12.9333,
+        "lng": 74.8,
+        "state": "Karnataka",
+        "vessels": 118,
+        "congestion": 52
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8,
+          12.9333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cochin Port",
+        "code": "COK",
+        "lat": 9.9667,
+        "lng": 76.2667,
+        "state": "Kerala",
+        "vessels": 175,
+        "congestion": 61
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2667,
+          9.9667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V.O. Chidambaranar (Tuticorin)",
+        "code": "TUT",
+        "lat": 8.75,
+        "lng": 78.1833,
+        "state": "Tamil Nadu",
+        "vessels": 130,
+        "congestion": 58
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.1833,
+          8.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chennai Port",
+        "code": "MAA",
+        "lat": 13.0833,
+        "lng": 80.3,
+        "state": "Tamil Nadu",
+        "vessels": 320,
+        "congestion": 82
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3,
+          13.0833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamarajar (Ennore)",
+        "code": "ENR",
+        "lat": 13.2667,
+        "lng": 80.3333,
+        "state": "Tamil Nadu",
+        "vessels": 98,
+        "congestion": 49
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3333,
+          13.2667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visakhapatnam Port",
+        "code": "VTZ",
+        "lat": 17.6833,
+        "lng": 83.2833,
+        "state": "Andhra Pradesh",
+        "vessels": 290,
+        "congestion": 76
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.2833,
+          17.6833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paradip Port",
+        "code": "PRD",
+        "lat": 20.2667,
+        "lng": 86.6667,
+        "state": "Odisha",
+        "vessels": 245,
+        "congestion": 81
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.6667,
+          20.2667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Syama Prasad Mookerjee (Kolkata)",
+        "code": "CCU",
+        "lat": 22.55,
+        "lng": 88.3167,
+        "state": "West Bengal",
+        "vessels": 189,
+        "congestion": 70
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3167,
+          22.55
+        ]
+      }
+    }
+  ]
+}

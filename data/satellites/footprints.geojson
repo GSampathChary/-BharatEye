@@ -1,0 +1,215 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SAT-01",
+        "name": "EOS-04 (RISAT-1A)",
+        "status": "ONLINE",
+        "sensor": "SAR Radar",
+        "lat": 18.5,
+        "lng": 78.5,
+        "model": "FloodNet-Demo",
+        "cpu": 62,
+        "memory": 48,
+        "source": "SIMULATED_TELEMETRY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.5,
+              16.5
+            ],
+            [
+              81.5,
+              16.5
+            ],
+            [
+              80.9,
+              20.5
+            ],
+            [
+              76.1,
+              20.5
+            ],
+            [
+              75.5,
+              16.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SAT-02",
+        "name": "Cartosat-3",
+        "status": "ONLINE",
+        "sensor": "Pan-Multispectral",
+        "lat": 22.1,
+        "lng": 82.3,
+        "model": "ChangeDetect-Demo",
+        "cpu": 74,
+        "memory": 61,
+        "source": "SIMULATED_TELEMETRY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.3,
+              20.1
+            ],
+            [
+              85.3,
+              20.1
+            ],
+            [
+              84.7,
+              24.1
+            ],
+            [
+              79.89999999999999,
+              24.1
+            ],
+            [
+              79.3,
+              20.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SAT-03",
+        "name": "Resourcesat-2A",
+        "status": "PROCESSING",
+        "sensor": "Multispectral AWiFS",
+        "lat": 16.3,
+        "lng": 80.5,
+        "model": "CropStress-Demo",
+        "cpu": 88,
+        "memory": 79,
+        "source": "SIMULATED_TELEMETRY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.5,
+              14.3
+            ],
+            [
+              83.5,
+              14.3
+            ],
+            [
+              82.9,
+              18.3
+            ],
+            [
+              78.1,
+              18.3
+            ],
+            [
+              77.5,
+              14.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SAT-04",
+        "name": "Oceansat-3",
+        "status": "OFFLINE",
+        "sensor": "Thermal OCM",
+        "lat": 12.4,
+        "lng": 74.2,
+        "model": "VesselDetect-Demo",
+        "cpu": 0,
+        "memory": 12,
+        "source": "SIMULATED_TELEMETRY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              71.2,
+              10.4
+            ],
+            [
+              77.2,
+              10.4
+            ],
+            [
+              76.60000000000001,
+              14.4
+            ],
+            [
+              71.8,
+              14.4
+            ],
+            [
+              71.2,
+              10.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SAT-05",
+        "name": "INSAT-3DR",
+        "status": "ONLINE",
+        "sensor": "Imager & Sounder",
+        "lat": 24.8,
+        "lng": 73.1,
+        "model": "FireDetect-Demo",
+        "cpu": 45,
+        "memory": 52,
+        "source": "SIMULATED_TELEMETRY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.1,
+              22.8
+            ],
+            [
+              76.1,
+              22.8
+            ],
+            [
+              75.5,
+              26.8
+            ],
+            [
+              70.69999999999999,
+              26.8
+            ],
+            [
+              70.1,
+              22.8
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

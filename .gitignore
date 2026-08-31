@@ -1,0 +1,30 @@
+# Dependency installs
+node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+frontend/dist/
+build/
+frontend/.vite/
+
+# Environment files
+.env
+.env.*
+!*.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Python caches and virtualenvs
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
