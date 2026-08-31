@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import events, satellites, ports, aoi, analytics
@@ -11,11 +13,15 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS configuration for frontend dev
+frontend_origin = os.getenv("FRONTEND_ORIGIN", "*")
+allowed_origins = [origin.strip() for origin in frontend_origin.split(",") if origin.strip()]
+allow_credentials = "*" not in allowed_origins
+
+# CORS configuration for local dev and deployed frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=allowed_origins or ["*"],
+    allow_credentials=allow_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )

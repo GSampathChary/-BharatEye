@@ -88,5 +88,39 @@ npm run build
 
 ---
 
+## 🚀 Deploying Publicly
+
+### Backend on Render
+1. Create a new Render Web Service from this repository.
+2. Use the `backend` folder as the root directory.
+3. Set the build command to `pip install -r requirements.txt`.
+4. Set the start command to `uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
+5. Add an environment variable:
+   - `FRONTEND_ORIGIN` = your Vercel site URL, for example `https://bharateye.vercel.app`
+6. Deploy and copy the live backend URL.
+
+### Frontend on Vercel
+1. Create a new Vercel project from this repository.
+2. Set the root directory to `frontend`.
+3. Add environment variables:
+   - `VITE_MAPBOX_TOKEN` = your public Mapbox token
+   - `VITE_API_URL` = your Render backend URL, for example `https://bharateye-backend.onrender.com`
+4. Deploy the site.
+
+### Quick checks after deploy
+1. Open the Vercel site and confirm the dashboard loads.
+2. Visit the backend `/docs` page and confirm the API is live.
+3. Test one API call from the frontend and make sure the browser console shows no CORS errors.
+
+---
+
+## Portfolio Entry
+
+If you want to add this to a portfolio site, a clean summary is:
+
+**BharatEye** - India-focused GeoAI and Earth Observation dashboard built with React, Vite, FastAPI, Deck.gl, Mapbox GL JS, and ECharts. Features simulated satellite intelligence, AOI analysis, live event monitoring, and geospatial analytics.
+
+---
+
 ## 📄 License
 MIT License. Created for Geospatial / Frontend Developer Portfolio Demonstration.
