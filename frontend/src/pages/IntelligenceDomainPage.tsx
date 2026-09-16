@@ -31,18 +31,18 @@ export const IntelligenceDomainPage: React.FC = () => {
   return (
     <div className="flex-1 flex flex-col overflow-hidden relative">
       {/* Domain Header Sub-bar */}
-      <div className="h-10 bg-[#0B1726] border-b border-gray-800 px-4 flex items-center justify-between z-20 shrink-0 font-mono text-xs select-none">
+      <div className="min-h-10 bg-[#0B1726] border-b border-gray-800 px-3 md:px-4 py-2 md:py-0 flex items-center justify-between gap-2 z-20 shrink-0 font-mono text-xs select-none">
         <div className="flex items-center space-x-2">
           <Icon className={`w-4 h-4 ${domainInfo.color}`} />
-          <h2 className="font-bold text-white uppercase tracking-wider">{domainInfo.title}</h2>
+          <h2 className="font-bold text-white uppercase tracking-wider leading-tight">{domainInfo.title}</h2>
         </div>
-        <span className="text-[10px] text-gray-400">DOMAIN-SPECIFIC DECK.GL VISUALIZATION</span>
+        <span className="hidden sm:block text-[10px] text-gray-400 text-right">DOMAIN-SPECIFIC DECK.GL VISUALIZATION</span>
       </div>
 
       {/* Main Container */}
-      <div className="flex-1 flex overflow-hidden relative">
+      <div className="flex-1 flex flex-col md:flex-row overflow-y-auto md:overflow-hidden relative">
         <EventFeed />
-        <div className="flex-1 relative overflow-hidden">
+        <div className="flex-1 min-h-[24rem] md:min-h-0 relative overflow-hidden">
           <IndiaMap />
         </div>
         <RightPanel />

@@ -9,7 +9,7 @@ export const HotspotPanel: React.FC = () => {
   const { startAnalysis, isAnalyzing } = useAOIStore();
 
   return (
-    <div className="w-80 bg-[#0B1726]/95 border-r border-gray-800 flex flex-col z-20 shrink-0 backdrop-blur-md select-none font-mono text-xs">
+    <div className="w-full md:w-80 max-h-[32rem] md:max-h-none bg-[#0B1726]/95 border-r border-gray-800 flex flex-col z-20 shrink-0 backdrop-blur-md select-none font-mono text-xs">
       {/* Top Header Tabs (Image 3 style) */}
       <div className="p-2 border-b border-gray-800 bg-[#06111F] flex space-x-1">
         {(['LAYERS', 'HOTSPOT', 'DISCOVERY'] as const).map((tab) => (

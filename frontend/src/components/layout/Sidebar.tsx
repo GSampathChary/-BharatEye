@@ -34,8 +34,9 @@ export const Sidebar: React.FC = () => {
   ];
 
   return (
+    <>
     <aside
-      className={`bg-[#0A192F] border-r border-blue-950 transition-all duration-300 z-20 flex flex-col justify-between select-none shadow-xl ${
+      className={`hidden md:flex bg-[#0A192F] border-r border-blue-950 transition-all duration-300 z-20 flex-col justify-between select-none shadow-xl ${
         sidebarOpen ? 'w-60' : 'w-16'
       }`}
     >
@@ -87,5 +88,12 @@ export const Sidebar: React.FC = () => {
         </div>
       )}
     </aside>
+    <nav className="md:hidden fixed inset-x-0 bottom-0 z-40 flex h-16 items-center gap-1 overflow-x-auto border-t border-blue-900 bg-[#0A192F]/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_20px_rgba(0,0,0,.25)] backdrop-blur-md">
+      {navItems.map((item) => {
+        const Icon = item.icon;
+        return <NavLink key={item.path} to={item.path} aria-label={item.label} className={({ isActive }) => `flex h-11 min-w-12 shrink-0 flex-col items-center justify-center gap-0.5 rounded-lg px-2 text-[9px] font-medium ${isActive ? 'bg-[#0052CC] text-white' : 'text-gray-300'}`}><Icon className="h-4 w-4" /><span className="max-w-16 truncate">{item.label.replace(' Intelligence', '')}</span></NavLink>;
+      })}
+    </nav>
+    </>
   );
 };

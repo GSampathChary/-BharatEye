@@ -10,7 +10,7 @@ export const RightPanel: React.FC = () => {
   const { rightPanelOpen, setRightPanelOpen } = useUIStore();
 
   return (
-    <aside className="w-80 bg-[#EFF4F9] border-l border-slate-300 flex flex-col shrink-0 select-none shadow-lg text-xs font-sans">
+    <aside className="w-full md:w-80 bg-[#EFF4F9] border-l border-slate-300 flex flex-col shrink-0 select-none shadow-lg text-xs font-sans">
       {/* Panel Header (Sachet Navy #0B2545) */}
       <div className="p-3 bg-[#0B2545] border-b border-blue-950 text-white flex items-center justify-between shadow-sm">
         <div className="flex items-center space-x-2">

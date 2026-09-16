@@ -19,7 +19,7 @@ export const BottomMetrics: React.FC = () => {
   ];
 
   return (
-    <div className="h-14 bg-[#06111F]/95 border-t border-gray-800/80 px-4 flex items-center justify-between z-20 shrink-0 backdrop-blur-md overflow-x-auto">
+    <div className="hidden md:flex h-14 bg-[#06111F]/95 border-t border-gray-800/80 px-4 items-center justify-between z-20 shrink-0 backdrop-blur-md overflow-x-auto">
       <div className="flex items-center space-x-6 w-full justify-around">
         {metrics.map((m, idx) => {
           const Icon = m.icon;

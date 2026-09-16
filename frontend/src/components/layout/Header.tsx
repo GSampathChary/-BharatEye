@@ -28,29 +28,29 @@ export const Header: React.FC = () => {
   return (
     <header className="flex flex-col z-30 select-none shadow-md font-sans">
       {/* Top Banner (Sachet National Disaster Alert Dashboard Header - Deep Navy #0B2545 + Gold) */}
-      <div className="h-14 bg-gradient-to-r from-[#0B2545] via-[#0D2E58] to-[#0A192F] px-4 flex items-center justify-between border-b border-blue-950 text-white">
+      <div className="min-h-14 bg-gradient-to-r from-[#0B2545] via-[#0D2E58] to-[#0A192F] px-3 py-2 md:px-4 md:py-0 flex items-center justify-between gap-2 border-b border-blue-950 text-white">
         {/* Brand Logo & Title */}
-        <div className="flex items-center space-x-3">
+        <div className="flex min-w-0 items-center space-x-2 md:space-x-3">
           <div className="relative flex items-center justify-center">
             <img
               src="/logo.png"
               alt="BharatEye Logo"
-              className="w-10 h-10 object-contain rounded-lg border-2 border-amber-400 p-0.5 bg-[#06111F]"
+              className="w-9 h-9 md:w-10 md:h-10 object-contain rounded-lg border-2 border-amber-400 p-0.5 bg-[#06111F]"
             />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
           </div>
 
           <div>
-            <div className="flex items-center space-x-2">
-              <span className="text-xl font-hindi font-bold text-amber-400 tracking-wide">सचेत</span>
-              <h1 className="text-base font-extrabold text-white tracking-wide">
+            <div className="flex items-center space-x-1.5 md:space-x-2">
+              <span className="text-lg md:text-xl font-hindi font-bold text-amber-400 tracking-wide">सचेत</span>
+              <h1 className="text-xs md:text-base font-extrabold text-white tracking-wide truncate">
                 National Disaster Alert Dashboard
               </h1>
-              <span className="text-[10px] font-mono font-bold bg-amber-400 text-black px-2 py-0.5 rounded uppercase">
+              <span className="hidden sm:inline text-[10px] font-mono font-bold bg-amber-400 text-black px-2 py-0.5 rounded uppercase">
                 BHARATEYE
               </span>
             </div>
-            <p className="text-[11px] text-gray-200">
+            <p className="hidden sm:block text-[11px] text-gray-200 truncate">
               Government of India • Disaster Management Support System • ISRO & EO Stream
             </p>
           </div>
@@ -71,28 +71,29 @@ export const Header: React.FC = () => {
         </div>
 
         {/* IST Clock & Diagnostics */}
-        <div className="flex items-center space-x-3 text-xs font-mono">
-          <div className="px-3 py-1 rounded bg-[#061B36] border border-blue-700 text-amber-300 flex items-center space-x-2">
+        <div className="flex shrink-0 items-center space-x-1.5 md:space-x-3 text-xs font-mono">
+          <div className="hidden lg:flex px-3 py-1 rounded bg-[#061B36] border border-blue-700 text-amber-300 items-center space-x-2">
             <Globe className="w-3.5 h-3.5 text-amber-400 animate-spin" style={{ animationDuration: '10s' }} />
             <span>{istTime}</span>
           </div>
 
           <button
             onClick={togglePerformanceMonitor}
-            className={`px-3 py-1 rounded border text-xs font-mono font-bold transition-all flex items-center space-x-1.5 ${
+            aria-label="Toggle diagnostics"
+            className={`p-2 md:px-3 md:py-1 rounded border text-xs font-mono font-bold transition-all flex items-center space-x-1.5 ${
               performanceMonitorOpen
                 ? 'bg-amber-400 text-black border-amber-500 font-bold'
                 : 'bg-[#061B36] text-white border-blue-700 hover:bg-blue-900'
             }`}
           >
             <Cpu className="w-3.5 h-3.5" />
-            <span>DIAGNOSTICS</span>
+            <span className="hidden md:inline">DIAGNOSTICS</span>
           </button>
         </div>
       </div>
 
       {/* 4 KPI Metric Cards Bar (Matching Image 801 Sachet Dashboard Top Cards 100%) */}
-      <div className="bg-[#EFF4F9] p-2 border-b border-slate-300 grid grid-cols-1 md:grid-cols-4 gap-2 text-slate-800">
+      <div className="bg-[#EFF4F9] p-2 border-b border-slate-300 grid grid-cols-2 lg:grid-cols-4 gap-2 text-slate-800">
         {/* Card 1: Orientation Session */}
         <div className="p-2 bg-white rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between">
           <div className="flex items-center justify-between border-b border-slate-100 pb-1">

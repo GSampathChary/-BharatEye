@@ -8,9 +8,9 @@ export const SatellitesPage: React.FC = () => {
   const { satellites, selectedSatellite } = useSatelliteStore();
 
   return (
-    <div className="flex-1 p-6 overflow-y-auto bg-[#EFF4F9] space-y-6 select-none font-sans">
+    <div className="flex-1 p-3 sm:p-4 md:p-6 overflow-y-auto bg-[#EFF4F9] space-y-4 md:space-y-6 select-none font-sans">
       {/* Top Banner Disclaimer */}
-      <div className="p-4 rounded-xl bg-[#0B2545] border border-blue-900 flex items-center justify-between text-white shadow-md">
+      <div className="p-3 sm:p-4 rounded-xl bg-[#0B2545] border border-blue-900 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:justify-between text-white shadow-md">
         <div className="flex items-center space-x-3">
           <Sparkles className="w-5 h-5 text-amber-400 shrink-0 animate-pulse" />
           <div>
@@ -18,7 +18,7 @@ export const SatellitesPage: React.FC = () => {
             <span className="text-xs text-gray-200">ISRO & Earth Observation Satellite Telemetry & Downlink Pipeline</span>
           </div>
         </div>
-        <span className="px-3 py-1 rounded bg-[#0052CC] text-white border border-blue-400/40 font-bold text-xs shadow-sm">
+        <span className="px-3 py-1 rounded bg-[#0052CC] text-white border border-blue-400/40 font-bold text-xs shadow-sm whitespace-nowrap">
           5 SATELLITES MONITORED
         </span>
       </div>
@@ -41,7 +41,7 @@ export const SatellitesPage: React.FC = () => {
       {/* Detailed Satellite telemetry drawer */}
       {selectedSatellite && (
         <div className="p-5 rounded-xl bg-white border border-slate-200 font-sans text-xs space-y-4 shadow-md">
-          <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
             <div className="flex items-center space-x-2 text-[#0052CC] font-bold text-sm">
               <Cpu className="w-4 h-4" />
               <span>{selectedSatellite.name} — TELEMETRY & EDGE MODEL SPECS</span>
@@ -51,7 +51,7 @@ export const SatellitesPage: React.FC = () => {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
             <div className="p-3 rounded bg-slate-50 border border-slate-200">
               <span className="text-slate-500 text-[10px] block mb-1">Target AOI</span>
               <strong className="text-slate-900 font-bold text-sm">{selectedSatellite.currentAOI}</strong>

@@ -130,18 +130,18 @@ export const ChartsGrid: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
-      <div className="p-4 rounded-xl bg-[#0B1726] border border-gray-800">
-        <ReactECharts option={timelineOption} style={{ height: '280px' }} />
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 p-0 sm:p-4">
+      <div className="p-2 sm:p-4 rounded-xl bg-[#0B1726] border border-gray-800 overflow-hidden">
+        <ReactECharts option={timelineOption} style={{ height: 'min(280px, 62vw)' }} />
       </div>
-      <div className="p-4 rounded-xl bg-[#0B1726] border border-gray-800">
-        <ReactECharts option={categoryOption} style={{ height: '280px' }} />
+      <div className="p-2 sm:p-4 rounded-xl bg-[#0B1726] border border-gray-800 overflow-hidden">
+        <ReactECharts option={categoryOption} style={{ height: 'min(280px, 62vw)' }} />
       </div>
-      <div className="p-4 rounded-xl bg-[#0B1726] border border-gray-800">
-        <ReactECharts option={regionalOption} style={{ height: '280px' }} />
+      <div className="p-2 sm:p-4 rounded-xl bg-[#0B1726] border border-gray-800 overflow-hidden">
+        <ReactECharts option={regionalOption} style={{ height: 'min(280px, 62vw)' }} />
       </div>
-      <div className="p-4 rounded-xl bg-[#0B1726] border border-gray-800">
-        <ReactECharts option={latencyOption} style={{ height: '280px' }} />
+      <div className="p-2 sm:p-4 rounded-xl bg-[#0B1726] border border-gray-800 overflow-hidden">
+        <ReactECharts option={latencyOption} style={{ height: 'min(280px, 62vw)' }} />
       </div>
     </div>
   );

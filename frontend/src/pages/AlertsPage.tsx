@@ -35,9 +35,9 @@ export const AlertsPage: React.FC = () => {
   };
 
   return (
-    <div className="flex-1 p-6 overflow-y-auto bg-[#EFF4F9] space-y-6 select-none font-sans">
+    <div className="flex-1 p-3 sm:p-4 md:p-6 overflow-y-auto bg-[#EFF4F9] space-y-4 md:space-y-6 select-none font-sans">
       {/* Header (Image 1 Sachet Navy Header Theme) */}
-      <div className="p-4 rounded-xl bg-[#0B2545] border border-blue-900 flex items-center justify-between text-white shadow-md">
+      <div className="p-3 sm:p-4 rounded-xl bg-[#0B2545] border border-blue-900 flex flex-col lg:flex-row items-start lg:items-center gap-3 lg:justify-between text-white shadow-md">
         <div className="flex items-center space-x-3">
           <div className="p-2.5 rounded-lg bg-red-600 text-white border border-red-400/40 shadow-sm">
             <Bell className="w-6 h-6 animate-pulse" />
@@ -53,7 +53,7 @@ export const AlertsPage: React.FC = () => {
         </div>
 
         {/* Severity Filter Tabs */}
-        <div className="flex space-x-1.5 font-mono">
+        <div className="flex flex-wrap gap-1.5 font-mono">
           {['ALL', 'CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].map((sev) => (
             <button
               key={sev}
@@ -78,13 +78,13 @@ export const AlertsPage: React.FC = () => {
             <div
               key={evt.id}
               onClick={() => handleOpenOnMap(evt)}
-              className={`p-4 rounded-xl border flex items-center justify-between transition-all cursor-pointer shadow-sm ${
+              className={`p-3 sm:p-4 rounded-xl border flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:justify-between transition-all cursor-pointer shadow-sm ${
                 isAcked
                   ? 'bg-white/60 border-slate-200 opacity-60'
                   : 'bg-white border-slate-200 hover:border-[#0052CC] hover:shadow-md'
               }`}
             >
-              <div className="flex items-center space-x-4">
+              <div className="flex items-start sm:items-center space-x-3 sm:space-x-4 min-w-0">
                 <div className={`p-2.5 rounded-lg border ${
                   evt.severity === 'CRITICAL' ? 'bg-red-100 text-red-700 border-red-200' : 'bg-amber-100 text-amber-800 border-amber-200'
                 }`}>
@@ -92,12 +92,12 @@ export const AlertsPage: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <span className="font-bold text-slate-900 text-sm font-sans">{evt.title}</span>
+                    <span className="font-bold text-slate-900 text-sm font-sans break-words">{evt.title}</span>
                     <span className="text-[10px] text-[#0052CC] bg-blue-50 border border-blue-200 px-2 py-0.5 rounded font-mono font-bold">
                       {evt.id}
                     </span>
                   </div>
-                  <div className="flex items-center space-x-3 text-xs text-slate-600 font-sans">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600 font-sans">
                     <span className="flex items-center gap-1 text-[#0052CC] font-bold">
                       <MapPin className="w-3.5 h-3.5 text-[#0052CC]" /> {evt.location}
                     </span>
@@ -108,7 +108,7 @@ export const AlertsPage: React.FC = () => {
               </div>
 
               {/* Action */}
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 self-end sm:self-auto">
                 <button
                   onClick={(e) => handleAcknowledge(evt.id, e)}
                   disabled={isAcked}

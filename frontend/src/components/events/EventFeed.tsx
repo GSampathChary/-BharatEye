@@ -65,7 +65,7 @@ export const EventFeed: React.FC = () => {
   };
 
   return (
-    <div className="w-80 bg-[#EFF4F9] border-r border-slate-300 flex flex-col z-20 shrink-0 select-none shadow-md font-sans text-xs">
+    <div className="w-full md:w-80 max-h-[24rem] md:max-h-none bg-[#EFF4F9] border-r border-slate-300 flex flex-col z-20 shrink-0 select-none shadow-md font-sans text-xs">
       {/* Feed Header (Image 1 Sachet Live Alerts Header Style) */}
       <div className="p-3 bg-[#0B2545] border-b border-blue-900 text-white flex items-center justify-between shadow-sm">
         <div className="flex items-center space-x-2">

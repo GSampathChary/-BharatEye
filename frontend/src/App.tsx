@@ -24,14 +24,14 @@ export const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        <div className="h-screen w-screen flex flex-col bg-[#06111F] text-gray-100 overflow-hidden font-sans select-none">
+        <div className="h-[100dvh] w-full flex flex-col bg-[#06111F] text-gray-100 overflow-hidden font-sans select-none">
           {/* Header */}
           <Header />
 
           {/* Main Workspace Body */}
-          <div className="flex-1 flex overflow-hidden relative">
+          <div className="flex-1 min-h-0 flex overflow-hidden relative pb-16 md:pb-0">
             <Sidebar />
-            <main className="flex-1 flex flex-col overflow-hidden relative bg-[#06111F]">
+            <main className="flex-1 min-h-0 flex flex-col overflow-hidden relative bg-[#06111F]">
               <Routes>
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 <Route path="/dashboard" element={<Dashboard />} />

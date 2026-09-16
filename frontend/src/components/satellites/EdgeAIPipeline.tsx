@@ -11,8 +11,8 @@ export const EdgeAIPipeline: React.FC = () => {
   ];
 
   return (
-    <div className="p-5 rounded-xl bg-[#0B1726] border border-gray-800 space-y-4 select-none">
-      <div className="flex items-center justify-between border-b border-gray-800 pb-3">
+    <div className="p-3 sm:p-5 rounded-xl bg-[#0B1726] border border-gray-800 space-y-4 select-none">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:justify-between border-b border-gray-800 pb-3">
         <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs font-bold uppercase tracking-wider">
           <Sparkles className="w-4 h-4" />
           <span>ONBOARD EDGE AI ARCHITECTURE</span>

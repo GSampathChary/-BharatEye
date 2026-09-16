@@ -43,7 +43,7 @@ export const AOIDrawer: React.FC = () => {
   };
 
   return (
-    <div className="w-96 bg-[#0B1726]/95 border-l border-gray-800 flex flex-col z-20 shrink-0 backdrop-blur-md select-none overflow-y-auto p-4 space-y-4 text-xs">
+    <div className="w-full md:w-96 max-h-[70vh] md:max-h-none bg-[#0B1726]/95 border-l border-gray-800 flex flex-col z-20 shrink-0 backdrop-blur-md select-none overflow-y-auto p-4 space-y-4 text-xs">
       {/* Header */}
       <div className="border-b border-gray-800 pb-3 flex items-center justify-between">
         <div className="flex items-center space-x-2">

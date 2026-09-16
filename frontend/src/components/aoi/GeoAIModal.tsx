@@ -38,7 +38,7 @@ export const GeoAIModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-md p-4 select-none">
-      <div className="w-full max-w-lg bg-[#0B1726] border border-cyan-500/50 rounded-xl shadow-glow-cyan p-6 space-y-5 text-xs font-mono">
+      <div className="w-full max-w-lg max-h-[calc(100dvh-2rem)] overflow-y-auto bg-[#0B1726] border border-cyan-500/50 rounded-xl shadow-glow-cyan p-4 sm:p-6 space-y-5 text-xs font-mono">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-gray-800 pb-3">
           <div className="flex items-center space-x-2 text-cyan-400 font-bold text-sm">
